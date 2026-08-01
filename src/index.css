@@ -1,0 +1,2 @@
+@import "tailwindcss";
+:root{font-family:Inter,"Noto Sans Thai","Noto Sans JP",system-ui,sans-serif;color:#21211f;background:#f5f0e7;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;min-height:100vh}button,a{font:inherit}button{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #ed6b43;outline-offset:4px}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
