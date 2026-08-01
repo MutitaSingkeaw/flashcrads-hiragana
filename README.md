@@ -27,4 +27,4 @@ npm run build
 npm run check
 ```
 
-เมื่อ merge หรือ push เข้า `main` GitHub Actions จะ build และ deploy โฟลเดอร์ `dist` ไปยัง GitHub Pages โดยเว็บไซต์ใช้ base path `/flashcrads-hiragana/`
+เมื่อ merge หรือ push เข้า `main` GitHub Actions จะ build และ deploy โฟลเดอร์ `dist` ไปยัง GitHub Pages โดยเว็บไซต์ใช้ base path `/flashcards-hiragana/`
