@@ -8,7 +8,10 @@ import './index.css'
 import App from './App.jsx'
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'))
+  window.addEventListener('load', async () => {
+    const registration = await navigator.serviceWorker.register('./sw.js')
+    registration.update()
+  })
 }
 
 createRoot(document.getElementById('root')).render(
