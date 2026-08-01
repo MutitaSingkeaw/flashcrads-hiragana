@@ -11,7 +11,11 @@ export function useLocalStorage(key, initialValue) {
   })
 
   useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value))
+    try {
+      localStorage.setItem(key, JSON.stringify(value))
+    } catch {
+      // Private browsing and full storage can reject writes; in-memory state still works.
+    }
   }, [key, value])
 
   return [value, setValue]

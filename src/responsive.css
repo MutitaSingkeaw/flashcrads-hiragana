@@ -1,0 +1,99 @@
+.study-area {
+  padding-inline: 88px;
+}
+
+.card-stage {
+  width: min(410px, 100%);
+}
+
+.card-arrow {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fffdf8eb;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 0 10px 30px #4436231f;
+  transform: translateY(-50%);
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+
+.card-arrow:hover {
+  background: var(--ink);
+  color: white;
+  transform: translateY(-50%) scale(1.07);
+}
+
+.card-arrow:focus-visible {
+  outline: 3px solid #e9663e66;
+  outline-offset: 3px;
+}
+
+.card-arrow-left { left: calc(50% - 274px); }
+.card-arrow-right { right: calc(50% - 274px); }
+
+.mobile-label { display: none; }
+
+@media (max-width: 800px) {
+  .study-area {
+    min-height: 500px;
+    padding: 10px 64px;
+  }
+
+  .card-arrow-left { left: 8px; }
+  .card-arrow-right { right: 8px; }
+
+  .controls { gap: 12px; }
+  .controls .rate-button {
+    width: 82px;
+    padding: 0 12px;
+    overflow: visible;
+  }
+  .controls .rate-button svg {
+    flex: 0 0 auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro { padding: 30px 0 24px; }
+  .intro-copy { font-size: 14px; }
+  .group-tabs { padding-bottom: 12px; }
+  .study-area { min-height: 460px; padding: 0; }
+
+  .card-arrow {
+    top: auto;
+    bottom: 14px;
+    width: 44px;
+    height: 44px;
+    background: #fffdf8f2;
+    transform: none;
+  }
+
+  .card-arrow:hover { transform: scale(1.05); }
+  .card-arrow-left { left: 14px; }
+  .card-arrow-right { right: 14px; }
+
+  .controls { gap: 10px; }
+  .controls .rate-button {
+    width: 62px;
+    height: 62px;
+    min-height: 62px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 1.2;
+    white-space: normal;
+  }
+  .controls .rate-button svg { display: none; }
+  .desktop-label { display: none; }
+  .mobile-label { display: inline; }
+  .rate-label { display: grid; place-items: center; }
+  .sound-button { width: 68px; height: 68px; }
+}
