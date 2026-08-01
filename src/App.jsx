@@ -77,7 +77,7 @@ function App() {
       <section className="intro" id="top">
         <div>
           <p className="eyebrow"><Sparkles size={15} /> เรียนด้วยภาพ · จำด้วยเรื่องราว</p>
-          <h1>ฮิรางานะ<br /><em>จำง่ายกว่าที่คิด</em></h1>
+          <h1>Hiragana<br /><em>จำง่ายกว่าที่คิด</em></h1>
         </div>
         <p className="intro-copy">มองหารูปที่ซ่อนอยู่ในตัวอักษร พลิกการ์ดเพื่อเฉลย แล้วบอกตัวเองว่าจำได้แค่ไหน</p>
       </section>
