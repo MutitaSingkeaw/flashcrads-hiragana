@@ -20,6 +20,10 @@ function App() {
           <h1>Hiragana<br /><em>จำง่ายกว่าที่คิด</em></h1>
         </div>
         <p className="intro-copy">มองหารูปที่ซ่อนอยู่ในตัวอักษร พลิกการ์ดเพื่อเฉลย แล้วบอกตัวเองว่าจำได้แค่ไหน</p>
+        <div className="intro-credit">
+          <p>ผู้จัดทำ นางสาวมุธิตา สิงห์แก้ว รหัสนักศึกษา B6609535 เลขที่ 26 sec 2</p>
+          <p className="intro-credit-sub">เป็นส่วนหนึ่งของรายวิชา JAPANESE 1 รหัสวิชาวิชา IST30 1401-1 </p>
+        </div>
       </section>
 
       <GroupTabs selectedGroup={study.selectedGroup} onSelect={study.selectGroup} />
